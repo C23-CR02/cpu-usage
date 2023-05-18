@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CPU Usage</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>CPU Usage</h1>
+    <form id="data-form">
+
+      <label for="app-key">App Key:</label>
+      <input type="text" id="app-key" name="app-key" required />
+      <label for="secret-key">Secret Key:</label>
+      <input type="text" id="secret-key" name="secret-key" required />
+      <label for="vm-id">VM ID:</label>
+      <input type="text" id="vm-id" name="vm-id" required />
+      <!-- <label for="bearer">bearer :</label>
+      <input type="text" readonly id="bearer" name="bearer" /> -->
+
+      <button type="submit">Get Data</button>
+    </form>
+
+    <table id="example">
+      <thead>
+        <tr>
+          <th>cpu_used</th>
+          <th>diskio_read</th>
+          <th>diskio_write</th>
+          <th>date</th>
+          <th>hour</th>
+          <th>converted_day</th>
+          <th>converted_hour</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Table rows will be dynamically populated -->
+      </tbody>
+    </table>
+  </body>
+  <script src="script.js"></script>
+</html>
